@@ -1,144 +1,38 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)http://interactive.designing.tools/projects/ascii-2 -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+  <head>
+        <title>Ascii Town: Jungan Bae</title>
+  </head>
+  <body>
+  <a href="interior-junganbae.html" style="text-decoration: none">
+    <pre>
+                __________________
+      -------- |  jungan's house  | --------
+      \        |__________________|        /
+      /__________\              /__________\
+      
+       |                                |
+    \     /        *           *     \     /
+  --   *   --            *         --   *   --
+    /     \                          /     \
+       |         *            *         |
 
-  
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    *         *         *         *           *
 
-  <title>UI Programming: Linking ASCII Town</title>
-  <meta name="description" content="class site for UI Design Programming 1, Spring 2023">
-  <link rel="icon" href="http://interactive.designing.tools/assets/images/favicon.png" type="image/png">
-
-  <link rel="stylesheet" href="./UI Programming_ Linking ASCII Town_files/index.css">
-</head>
-<body class="Linking ASCII Town Projects" data-new-gr-c-s-check-loaded="14.1226.0" data-gr-ext-installed="">
-  <header class="header wrap wide" role="banner">
-    <ul id="menu">
-	<li id="logo">
-		<a href="http://interactive.designing.tools/" id="homelink" rel="home">
-			UI Design Programming 1:
-		</a>
-	</li>
-	<li>
-		<a href="http://interactive.designing.tools/calendar/" id="calendarlink" rel="calendar">
-			Calendar
-		</a>
-	</li>	
-	<li>
-		<a href="http://interactive.designing.tools/projects/" id="projectslink" rel="projects">
-			Projects
-		</a>
-	</li>
-	<li>
-		<a href="http://interactive.designing.tools/resources/" id="resourceslink" rel="resources">
-			Resources
-		</a>
-	</li>
-	<li>
-		<a href="http://interactive.designing.tools/library/" id="librarylink" rel="library">
-			Library
-		</a>
-	</li>
-	<li>
-		<a href="http://interactive.designing.tools/about/" id="aboutlink" rel="about">
-			About
-		</a>
-	</li>	
-	<li>
-		<a href="https://docs.google.com/document/d/18W80g6x8xxDRWQz02U64d469ZI4t8ff1QLh_DJcVvaw/edit?usp=sharing" target="_blank">Class Doc ↗</a>
-	</li>
-</ul>  </header>
-
-  <main class="main" role="main">
-
-	<h1 id="title">Linking ASCII Town</h1>
-
-    <div class="text wrap">
-      <figure><img src="./UI Programming_ Linking ASCII Town_files/image4.png" alt=""></figure>
-<h2>Presenting ASCII Town</h2>
-<p>Try rendering your code in your browser by dragging your file into a browser window. You’ll notice that your ASCII art does not render properly!</p>
-<p>This is because the web browser parses the contents of your HTML file, looking for specific tags to inform how it is rendered. Copy the following code into your html file (do not delete your existing code!!!):</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-        &lt;title&gt;Ascii Town: yournamehere&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;pre&gt;
-
-    &lt;/pre&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-<p>then move your ASCII art in between the opening  <code>&lt;pre&gt;</code> and closing <code>&lt;/pre&gt;</code> tag. Try rendering the page in the browser again – it should render correctly! As a test, remove the <code>&lt;pre&gt;&lt;/pre&gt;</code> tags and see what happens. The <code>&lt;pre&gt;</code> tag tells the browser to render the code as… code in your browser.</p>
-<p>Do this for both the outside and inside of your ASCII house, and save the files in a secure location.</p>
-<h3>Uploading ASCII TOWN</h3>
-<p>Place your HTML files in a folder titled ‘ascii_town’. Then move this folder inside of your ‘UIDesign1’ class site folder.</p>
-<figure><img src="./UI Programming_ Linking ASCII Town_files/files.png" alt=""></figure>
-<p>In your ‘exterior-yourfirstnamelastname.html file, wrap the <code>&lt;pre&gt;</code> tag around your code with an <code>&lt;a&gt;</code> tag:</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-        &lt;title&gt;Ascii Town: yournamehere&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;a href=”interior-yourfirstnamelastname.html”&gt;
-    &lt;pre&gt;
-    … ascii art …
-    &lt;/pre&gt;
-  &lt;/a&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-<p>Since these files are siblings, you only need to write the filename you’re trying to link to as the href attribute value (the text inside the <code>“”</code>s).</p>
-<figure><img src="./UI Programming_ Linking ASCII Town_files/code.png" alt=""></figure>
-<p>We’re also going to add a special style attribute and value to our <code>&lt;a&gt;</code> tag to make sure it renders how we’d like it to. </p>
-<p><code>&lt;a href="..." style="text-decoration: none"&gt;</code></p>
-<p>Then, link your ‘interior-yourfirstnamelastname.html’ to your ‘exterior-yourfirstnamelastname.html’ file using the same process.</p>
-<p>Finally, upload these files to your class site, and link to them from your personal landing page (<code>index.html</code> file in the "root" of your <code>UIDesign1</code> Github directory). Create a new section on your site, with a list of Exercises. You can use this code as a starting point:</p>
-<pre><code>      &lt;h3&gt;Exercises&lt;/h3&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href="ascii_town/interior-yourfirstnamelastname.html"&gt;ASCII Town&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;</code></pre>
-<p>Here you are creating a level 3 headline which indicates the title of the list below. Feel free to adjust the tags as you see fit!</p>
-<figure><img src="./UI Programming_ Linking ASCII Town_files/section.png" alt=""></figure>
-<p><br></p>
-<h3>Technical Note</h3>
-<p>if you’re having issues rendering your ASCII Town correctly, it may be an issue with your character encoding (this may be caused depending on the language of keyboard you’re using). If you’re having such issues, try copying:</p>
-<p><code>&lt;meta charset="utf-8" /&gt;</code></p>
-<p>Into the <code>&lt;head&gt;</code> of your document. Like this:</p>
-<figure><img src="./UI Programming_ Linking ASCII Town_files/encoding.png" alt=""></figure>    </div>
-
-  </main>
-
-  <footer class="footer cf" role="contentinfo">
-  UI Design Programming 1<br>
-  SNU Spring 2025<br>
-	49-215<br>
-	Tuesday 2:00-5:50pm<br>
-  Office Hours: Friday 1pm – 3pm<br>
-  49-207 by appointment<br>
-	Instructor: <a href="mailto:chamamoto@snu.ac.kr">chris hamamoto</a><br>
-  </footer>
-
-<script src="./UI Programming_ Linking ASCII Town_files/jquery.min.js"></script><script src="./UI Programming_ Linking ASCII Town_files/script.js"></script>
-
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-      }
-
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+          *        `'::::.      *        *    
+                     _____A_
+  *              *  /      /\      *         *
+        *        __/__/\__/  \___
+             ---/__|" '' "| /___/\----
+                |''|"'||'"| |' '||
+                `""`""))""`"`""""`
+  *********************************************      
+    
+   (___()'`;     _        (___()'`;      _
+  /,    /`      ( )       /,    /`      ( )
+  \\"--\\      (_X_)      \\"--\\      (_X_) 
+                 j                       j
+    </pre>
+  </a>
+  </body>
+</html>
