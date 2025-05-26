@@ -1,7 +1,18 @@
+*{
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
 body {
-    background: #ffdff8;
+    background: linear-gradient(#ffdff8,#dffdff);
     color: #5e3b2e;
     font-family: Futura;
+}
+
+h1 {
+    padding: 20px;
 }
 
 li { text-shadow: 0px 0px 10px coral;

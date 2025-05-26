@@ -1,0 +1,271 @@
+body {
+	background: #cccccc;
+}
+
+#align {
+	display: flex;
+  align-items: center;
+  justify-content: center;	
+  height: 100vh;
+}
+
+#stage {
+	width: 900px;
+	height: 556px;
+	margin: auto;
+	background: #efefef;
+	position: relative;
+}
+
+
+
+#pocari {
+	width: 92px;
+	height: 208px;
+	background: #0048FF;
+	top: 190px;
+	left: 393px;
+	position: absolute;
+}
+
+#pocari-text{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	writing-mode: sideways-rl;
+	top: 213px;
+	left: 411px;
+	position: absolute;
+}
+
+#pocari-bottom {
+	width:90px;
+	height:21px;
+	background:#0048FF;
+	border-radius: 50%;
+	top:388px;
+	left:395px;
+	position:absolute;
+}
+
+#pocari-lid {
+	width:92px;
+	height:21px;
+	background:linear-gradient(#fbfbfb,#afafaf);
+	border-radius: 50%;
+	top:179px;
+	left:393px;
+	position:absolute;
+}
+
+#ramen {
+	width:129px ;
+	height:182px ;
+	background: #FF451B;
+	color:black;
+	font-size:70px;
+	font-weight:bold;
+	text-align: center;
+	top: 213px;
+	left: 249px;
+	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+	position: absolute;
+}
+
+#ramen-text {
+	color:black;
+	font-size:80px;
+	font-weight:bold;
+	top: 243px;
+	left: 281px;
+	position: absolute;
+}
+
+#ramen-bottom {
+	width:79px;
+	height:31px;
+	background: #FF451B;
+	border-radius: 50%;
+	top:377px;
+	left:274px;
+	position:absolute;
+}
+
+#ramen-top {
+	width:129px;
+	height:31px;
+	background: linear-gradient(#ff4646,#673636);
+	border-radius: 50%;
+	top:197px;
+	left:249px;
+	position:absolute;
+}
+
+#chopstick {
+	width: 9px;
+	height: 28px;
+	background: #B1B1B1;
+	border-radius:4px 4px 2px 2px ;
+	top: 187px;
+	left:302px;
+	position:absolute;
+}
+
+#chopstick2 {
+	width: 9px;
+	height: 28px;
+	background: #B1B1B1;
+	border-radius:4px 4px 2px 2px ;
+	top: 187px;
+	left:316px;
+	position:absolute;
+}
+
+
+#apple {
+	width:89px;
+	height:90px;
+	background: linear-gradient(to bottom right, #FFAE00,#EB1B00);
+	border-radius: 35% 40% 50% 55%;
+	top: 325px;
+	left: 330px;
+	position: absolute;
+}
+
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+
+
+#head {
+	width: 144px;
+	height: 138px;
+	background:#FFEF09 ;
+	border-radius: 150px;
+	top: 163px;
+	left: 480px;
+	position: absolute;
+}
+
+#body {
+	width: 110px;
+	height: 115px;
+	background:#FFEF09 ;
+	border-radius: 150px;
+	top: 287px;
+	left: 496px;
+	position: absolute;
+}
+
+#ear {
+	width: 38px;
+	height: 39px;
+	background:linear-gradient(#FFEF09,#FFBF00) ;
+	border-radius: 20px 20px 10px 10px;
+	top: 150px;
+	left: 533px;
+	position: absolute;
+}
+
+#line {
+	width: 49px;
+	height: 6px;
+	background:#FFBF00 ;
+	border-radius: 4px 4px 4px 4px;
+	top: 209px;
+	left: 528px;
+	position: absolute;
+}
+
+#line2 {
+	width: 49px;
+	height: 6px;
+	background:#FFBF00 ;
+	border-radius: 4px 4px 4px 4px;
+	top: 228px;
+	left: 528px;
+	position: absolute;
+}
+
+#arm {
+	width: 31px;
+	height: 42px;
+	background:linear-gradient(#FFEF09,#FFBF00);
+	top: 305px;
+	left: 536px;
+	position: absolute;
+}
+  
+#hand {
+	width: 44px;
+	height: 42px;
+	border-radius: 180px;
+	background:white;
+	top: 337px;
+	left: 530px;
+	position: absolute;
+}
+
+#leg {
+	width: 41px;
+	height: 27px;
+	background-color: #FFEF09;
+	top: 373px;
+	left: 568px;
+	position: absolute;
+
+}
+
+#foot {
+	width: 44px;
+	height: 42px;
+	border-radius: 180px;
+	background-color: white;
+	top: 362px;
+	left: 598px;
+	position: absolute;
+}
+
+#tail {
+	width: 36px;
+	height: 20px;
+	border-radius: 10px;
+	background-color:#FFEF09;
+	top: 379px;
+	left: 489px;
+	rotate:-45deg;
+	position: absolute;
+}
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
