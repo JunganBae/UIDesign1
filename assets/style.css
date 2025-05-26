@@ -1,60 +1,20 @@
-* {
-	margin:  0px;
-	padding:  0px;
-	box-sizing: border-box;
-}
-
-/* adjusting fonts */
-
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
-	transition: background 500ms ease;
+    background: #ffdff8;
+    color: #5e3b2e;
+    font-family: Futura;
 }
 
-p, li {
-	font-size:  22px;
-	line-height: 30px;
+li { text-shadow: 0px 0px 10px coral;
+   } 
+
+span{ 
+    font-size: 50px;
 }
 
-/* adjusting spacing */
-
-#left-column {
-	padding: 20px;
+.letter{
+    text-shadow: 0px 0px 10px palevioletred;
 }
 
-h1, p {
-	margin-bottom:  20px;
+#drop-cap{
+    color:royalblue;
 }
-
-ul, ol {
-	margin-left: 20px;
-}
-
-img {
-	max-width: 100%;
-	height:  auto;
-}
-
-/* uncomment the code below to set the grid */
-
-/*#grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-
-body {
-	overflow: hidden;
-}
-
-.scroll {
-	padding:  20px;
-	overflow: scroll;
-	height: 100vh;
-}
-
-#left-column {
-}
-
-#right-column {
-	background: #333;
-}*/
