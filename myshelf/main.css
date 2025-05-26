@@ -12,7 +12,7 @@ body {
 	align-items: center;
 	min-height: 100vh;
   	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  	background: #ece5db;
+  	background: #99949d;
 }
 
 h1 {
@@ -32,8 +32,9 @@ h1 {
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	justify-content: space-evenly;
-	border: 20px solid #665242;
-	background: #352e28;
+	border: 30px solid #37322e;
+	background: #242220;
+
 }
 
 .shelf {
@@ -42,7 +43,7 @@ h1 {
 	flex-direction: row;
 	align-items: bottom;
 	justify-content: space-evenly;
-	border-bottom: 20px solid #665242;
+	border-bottom: 30px solid #37322e;
 	padding: 10px 10px 0px 0px;
 }
 
