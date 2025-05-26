@@ -1,5 +1,5 @@
 body {
-	background: #cccccc;
+	background: #9bffff;
 }
 
 #align {
@@ -9,14 +9,21 @@ body {
   height: 100vh;
 }
 
-#stage {
+#table {
 	width: 900px;
 	height: 556px;
 	margin: auto;
-	background: #efefef;
+	background: #ffe4e8;
 	position: relative;
 }
 
+#background {
+	width: 900px;
+	height: 300px;
+	background: #e0fff6;
+	margin: auto;
+	position: relative;
+}
 
 
 #pocari {
