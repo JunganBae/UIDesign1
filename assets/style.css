@@ -6,16 +6,38 @@
 }
 
 body {
-    background: linear-gradient(#ffdff8,#dffdff);
-    color: #5e3b2e;
+    background: deepskyblue;
+    color: white;
     font-family: Futura;
+}
+
+button{
+    font-size: 1.5em;
+    color:  #39FF14;
+    font-family: cursive;
+    font-weight: bold;
+    border: 2px solid var(--accent-color);
+    background: transparent;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+}
+
+button:hover{
+    background: white;
+    cursor: pointer;
+}
+
+
+body.dark {
+  background: #333;
 }
 
 h1 {
     padding: 20px;
 }
 
-li { text-shadow: 0px 0px 10px coral;
+li { text-shadow: 0px 0px 10px blueviolet;
    } 
 
 span{ 
@@ -23,9 +45,9 @@ span{
 }
 
 .letter{
-    text-shadow: 0px 0px 10px palevioletred;
+    text-shadow: 0px 0px 10px blueviolet;
 }
 
 #drop-cap{
-    color:royalblue;
+    color:lightskyblue;
 }
