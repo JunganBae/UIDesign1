@@ -1,0 +1,131 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f8ff, #add8e6); /* 부드러운 그라데이션 배경 */
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #d35400; /* 파스타스러운 주황색 */
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #555;
+}
+
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    appearance: none; /* 기본 드롭다운 화살표 제거 */
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #d35400;
+}
+
+button {
+    background-color: #28a745; /* 시작 버튼 초록색 */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#resetButton {
+    background-color: #dc3545; /* 리셋 버튼 빨간색 */
+    margin-top: 15px;
+}
+
+#resetButton:hover {
+    background-color: #c82333;
+}
+
+.timer-display {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    border: 1px dashed #adb5bd;
+}
+
+.timer-display p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#countdown {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #007bff; /* 카운트다운 파란색 */
+    letter-spacing: 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 25px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    button {
+        font-size: 1.1em;
+        padding: 12px 20px;
+    }
+    #countdown {
+        font-size: 2.8em;
+    }
+}

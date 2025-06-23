@@ -20,7 +20,7 @@ button{
     background: transparent;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 button:hover{
@@ -28,6 +28,23 @@ button:hover{
     cursor: pointer;
 }
 
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: white;
+}
 
 body.dark {
   background: #333;
