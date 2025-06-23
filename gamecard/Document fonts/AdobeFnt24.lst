@@ -1,11 +1,11 @@
 %!Adobe-FontList 1.24
-%Locale:0x409
+%Locale:0x412
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:/Users/chris/Desktop/card-template Folder/Document fonts/AdobeFnt24.lst
-FileLength:607
+OutlineFileName:/Users/apple/Documents/GitHub/UIDesign1/gamecard/Document fonts/AdobeFnt24.lst
+FileLength:795
 FileModTime:770554670
 %EndFont
 
@@ -22,7 +22,7 @@ WidthClass:5
 AngleClass:0
 FullName:Minion Pro
 WritingScript:Roman
-OutlineFileName:/Users/chris/Desktop/card-template Folder/Document fonts/MinionPro-Regular.otf
+OutlineFileName:/Users/apple/Documents/GitHub/UIDesign1/gamecard/Document fonts/MinionPro-Regular.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
