@@ -1,0 +1,393 @@
+/* timer_style.css (타이머 페이지 전용 스타일) */
+
+/* 재설정 (Reset) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #000000;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    align-items: center; 
+}
+
+/* 메인 페이지로 돌아가는 버튼 스타일 */
+.back-to-main-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 10;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.back-to-main-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.back-to-main-button .arrow {
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+/* 헤더 (메인 페이지와 동일한 스타일) */
+.main-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-title-img {
+    max-width: 400px;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.7));
+}
+
+
+/* 타이머 UI 영역 */
+.timer-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.timer-title {
+    font-family: 'Playball', cursive;
+    font-size: 2.5em;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+/* Today's Pasta is: 텍스트 스타일 */
+.selected-pasta-text {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #f7e0b5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* 타이머 카드들을 담는 컨테이너 */
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+}
+
+/* 개별 타이머 카드 스타일 */
+.timer-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 익힘 정도 카드 내부 스타일 */
+.cooking-level-card {
+    margin-bottom: 10px;
+}
+
+.cooking-level-card h3 {
+    font-size: 1.3em;
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.cooking-level-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.level-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f7e0b5;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.level-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.level-button.active {
+    background-color: #FFCA38;
+    color: #222;
+    border-color: #FFCA38;
+    box-shadow: 0 0 10px rgba(255, 202, 56, 0.7);
+}
+
+
+.timer-display {
+    font-family: 'Playball', cursive;
+    font-size: 5em;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    line-height: 1;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.timer-button {
+    background-color: #FFCA38;
+    color: #222;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.timer-button:hover {
+    background-color: #e0b62c;
+    transform: translateY(-2px);
+}
+
+/* ---------------------------------------------------- */
+/* 미디어 쿼리 (반응형 조정) */
+
+/* 태블릿 (min-width: 768px) */
+@media (min-width: 768px) {
+    .back-to-main-button {
+        top: 30px;
+        left: 30px;
+        padding: 12px 18px;
+        font-size: 1.1em;
+    }
+    .back-to-main-button .arrow {
+        font-size: 1.7em;
+    }
+
+    .main-title-img {
+        max-width: 500px;
+        margin-bottom: 25px;
+    }
+
+    .selected-pasta-text {
+        font-size: 1.8em;
+        margin-bottom: 40px;
+    }
+
+    .timer-main {
+        padding: 30px;
+        max-width: 900px;
+    }
+    .timer-title {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+    .cooking-level-card {
+        margin-bottom: 20px;
+    }
+    .cooking-level-card h3 {
+        font-size: 1.5em;
+    }
+    .level-button {
+        font-size: 1.1em;
+        padding: 12px 20px;
+    }
+    .timer-display {
+        font-size: 6em;
+    }
+    .timer-button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+    .timer-container {
+        flex-direction: row;
+        gap: 30px;
+        max-width: 700px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cooking-level-card,
+    .timer-display-card,
+    .timer-controls-card {
+        width: calc(50% - 15px);
+    }
+    .timer-display-card {
+        order: 1;
+    }
+    .timer-controls-card {
+        order: 3;
+    }
+    .cooking-level-card {
+        order: 2;
+    }
+}
+
+/* 데스크탑 (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .back-to-main-button {
+        top: 40px;
+        left: 40px;
+        padding: 15px 25px;
+        font-size: 1.2em;
+    }
+    .back-to-main-button .arrow {
+        font-size: 1.8em;
+    }
+
+    .main-title-img {
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .selected-pasta-text {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+
+    .timer-main {
+        padding: 40px;
+        max-width: 1000px;
+    }
+    .timer-title {
+        font-size: 3.5em;
+        margin-bottom: 40px;
+    }
+    .cooking-level-card h3 {
+        font-size: 1.7em;
+    }
+    .level-button {
+        font-size: 1.2em;
+        padding: 15px 25px;
+    }
+    .timer-display {
+        font-size: 7em;
+    }
+    .timer-button {
+        padding: 18px 35px;
+        font-size: 1.3em;
+    }
+    .timer-container {
+        gap: 40px;
+        max-width: 800px;
+    }
+    .cooking-level-card,
+    .timer-display-card,
+    .timer-controls-card {
+        width: calc(50% - 20px);
+    }
+}
+
+/* 매우 작은 화면 (모바일 가로모드 등)에 대한 추가 미디어 쿼리 */
+@media (max-width: 480px) {
+    .back-to-main-button {
+        top: 15px;
+        left: 15px;
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+    .back-to-main-button .arrow {
+        font-size: 1.2em;
+    }
+
+    .main-title-img {
+        max-width: 350px;
+        margin-bottom: 10px;
+    }
+    .selected-pasta-text {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    .timer-main {
+        padding: 15px;
+    }
+    .timer-title {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .cooking-level-card {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .cooking-level-card h3 {
+        font-size: 1.1em;
+    }
+    .level-button {
+        font-size: 0.85em;
+        padding: 8px 12px;
+    }
+    .timer-display {
+        font-size: 4em;
+    }
+    .timer-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .timer-container {
+        gap: 15px;
+    }
+    .timer-card {
+        padding: 15px;
+    }
+}
