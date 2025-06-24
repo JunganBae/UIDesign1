@@ -80,7 +80,7 @@ li {
 .exercises-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3개의 동일한 너비의 컬럼 생성 */
-    gap: 2px; /* 여기를 0px로 변경하여 모든 간격을 최소화했습니다. */
+    gap: 5px; /* 여기를 0px로 변경하여 모든 간격을 최소화했습니다. */
     justify-items: center; /* 그리드 셀 내에서 아이템을 중앙 정렬 */
     align-items: center; /* 그리드 셀 내에서 아이템을 수직 중앙 정렬 */
     margin: 10px auto; /* 그리드 컨테이너 자체에 상하 여백을 주고 중앙 정렬 */
