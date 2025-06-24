@@ -6,14 +6,15 @@
 }
 
 body {
-    background: deepskyblue;
+    background: #9cdcff;
     color: white;
     font-family: Futura;
+    text-align: center;
 }
 
 button{
     font-size: 1.5em;
-    color:  #39FF14;
+    color:  deepskyblue;
     font-family: cursive;
     font-weight: bold;
     border: 2px solid var(--accent-color);
@@ -31,7 +32,7 @@ button:hover{
 .button-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #39c2ff;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -47,24 +48,115 @@ button:hover{
 }
 
 body.dark {
-  background: #333;
+  background: #002e72;
 }
 
 h1 {
     padding: 20px;
 }
 
-li { text-shadow: 0px 0px 10px blueviolet;
-   } 
-
-span{ 
-    font-size: 50px;
-}
-
-.letter{
+li { 
     text-shadow: 0px 0px 10px blueviolet;
+} 
+
+/* Styles for increased spacing */
+.spacer {
+    height: 30px; /* Adjust this value to control the amount of space */
+    width: 100%;
 }
 
-#drop-cap{
-    color:lightskyblue;
+/* Style to remove bullet points */
+.no-bullets {
+    list-style-type: none;
+    padding: 0; /* Remove default padding from ul */
 }
+
+/* Ensure list items also align center without bullets */
+.no-bullets li {
+    text-align: center;
+}
+
+/* Styles for 3-column layout for exercises buttons */
+.exercises-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 동일한 너비의 컬럼 생성 */
+    gap: 2px; /* 여기를 0px로 변경하여 모든 간격을 최소화했습니다. */
+    justify-items: center; /* 그리드 셀 내에서 아이템을 중앙 정렬 */
+    align-items: center; /* 그리드 셀 내에서 아이템을 수직 중앙 정렬 */
+    margin: 10px auto; /* 그리드 컨테이너 자체에 상하 여백을 주고 중앙 정렬 */
+    max-width: 900px; /* 그리드 전체의 최대 너비 설정, 필요에 따라 조절 */
+}
+
+/* 그리드 내의 버튼 링크가 셀 너비에 맞게 조절되도록 */
+.exercises-grid .button-link {
+    width: 80%; /* 버튼이 그리드 셀의 전체 너비를 차지하도록 */
+    box-sizing: border-box; /* 패딩과 보더를 너비에 포함 */
+}
+
+/* 그리드 내의 ul 요소에 기본 마진/패딩 제거 및 너비 설정 */
+.exercises-grid ul.no-bullets {
+    margin: 0;
+    padding: 0;
+    width: 80%; /* ul이 그리드 셀의 전체 너비를 차지하도록 */
+    /* 현재 ul과 li에도 margin이 적용되어 있을 수 있으므로 ul의 margin을 0으로 설정합니다. */
+    margin-bottom: 0; /* ul 아래쪽 마진도 제거하여 행 간격에 영향을 주지 않도록 합니다. */
+}
+
+/* * 선택자에 적용된 기본 마진 10px이 버튼 간격에 영향을 줄 수 있습니다. */
+/* 버튼 링크 자체의 외부 마진도 확인하여 조정할 수 있습니다. */
+.exercises-grid ul.no-bullets li {
+    margin: 0; /* li에 적용된 margin도 제거 */
+}
+
+.exercises-grid .button-link {
+    margin: 5px; 
+} /* <-- 여기에 닫는 괄호 '}'가 없어서 문제가 발생했을 수도 있습니다. */
+
+body {
+  cursor: url('mousedamgom.png') 16 16, auto;
+}
+
+.button-link:hover {
+  cursor: url('mousedamgom.png') 5 5, pointer;
+}
+
+html, body {
+    position: relative; /* 절대 위치 기준점 설정 */
+    overflow-x: hidden; /* 필요시 수평 스크롤 방지 */
+}
+
+.moving-image { /* <-- 클래스 이름을 일치시켰습니다! */
+    position: absolute;
+    width: 50px; /* <-- 50px로 변경 */
+    height: auto;
+    top: 60%;  /* 위치 약간 조정 가능 */
+    left: 0;
+    transform: translateY(-50%);
+    animation: moveDamgom 30s linear infinite alternate;
+    z-index: 9999; /* 항상 위에 뜨도록 */
+    pointer-events: none; /* 클릭 방해 안 되도록 */
+}
+
+@keyframes moveDamgom {
+  0% {
+        top: 10%;
+        left: 0%;
+    }
+    25% {
+        top: 70%;
+        left: calc(50% - 25px); /* 화면 중앙으로 이동 */
+    }
+    50% {
+        top: 20%;
+        left: calc(100% - 50px); /* 오른쪽 상단으로 이동 */
+    }
+    75% {
+        top: 90%;
+        left: calc(20% - 25px); /* 왼쪽 하단으로 이동 */
+    }
+    100% {
+        top: 10%;
+        left: 0%; /* 시작 위치로 돌아옴 */
+    }
+}
+
